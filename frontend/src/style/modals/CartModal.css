@@ -1,0 +1,131 @@
+
+
+/* Фон модального окна */
+.cart-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.801);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+
+/* Контейнер модального окна */
+.cart-modal-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  height: 90vh; 
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+
+
+
+
+.cart-modal-content {
+  
+  overflow-y: auto; 
+  
+}
+
+
+
+/* Заголовок корзины */
+.cart-modal-title-container {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.cart-modal-title-container p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Контейнер для списка товаров в корзине */
+.cart-modal-items-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+/* Контейнер для кнопки "Оформить заказ" */
+.cart-modal-checkout-button-div {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+/* Кнопка "Оформить заказ" */
+.cart-modal-button {
+  padding: 10px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-modal-button:hover {
+  background-color: #0056b3;
+}
+
+/* Кнопки закрытия модального окна */
+.cart-modal-close-button {
+  position: absolute; 
+  top: 3px; 
+  right: 45px; 
+  border: none;
+  cursor: pointer;
+  z-index: 10; 
+  color: #aaa;
+  background: none;
+}
+
+.cart-modal-close-button img {
+  width: 15px;
+  height: 15px;
+}
+
+/* Стили для пустой корзины */
+.cart-modal-empty-cart-div {
+  padding: 50px;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-modal-empty-cart-div p {
+  opacity: 0.7;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media screen and (max-width: 600px) {
+  .cart-modal-container {
+    width: 90%;
+  }
+
+  .cart-modal-button {
+    width: 100%;
+  }
+}

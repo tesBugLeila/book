@@ -1,0 +1,19 @@
+.admin-dashboard {
+  margin-top: 80px; /* Отступ сверху */
+  padding: 20px;
+  background-color: #e7e7e7;
+  border-radius: 8px;
+  z-index: 999;
+  position: relative;
+}
+
+.close-button {
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 768px) {
+  .admin-dashboard {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,84 @@
+/* Общие стили для кнопок */
+.admin-button, .admin-form-button, .admin-table-button {
+    padding: 10px 20px;
+    background-color: #1976d2; /* Основной цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    margin: 5px;
+  }
+  
+  .admin-button {
+    margin-left: 15px !important; 
+    margin-right: 10px !important; 
+  }
+  
+
+
+  .admin-button:hover, .admin-form-button:hover, .admin-table-button:hover {
+    background-color: #115293; /* Цвет при наведении */
+  }
+  
+  .admin-button:disabled, .admin-form-button:disabled, .admin-table-button:disabled {
+    background-color: #cccccc; /* Цвет заблокированной кнопки */
+    cursor: not-allowed;
+  }
+  
+  /* Стили для таблиц */
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .admin-table th {
+    background-color: #f2f2f2;
+    position: relative;
+  }
+  
+  .admin-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .admin-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Стили для фильтров */
+  .admin-table-filter {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Стили для форм */
+  .admin-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-form input, .admin-form select, .admin-form button {
+    flex: 1 1 200px;
+  }
+  
+  /* Заголовки */
+  .admin-section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  

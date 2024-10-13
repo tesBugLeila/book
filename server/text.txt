@@ -1,0 +1,19 @@
+1. Инициализация проекта  npm init -y
+2. Установка необходимых зависимостей npm install express firebase-admin dotenv bcryptjs jsonwebtoken
+3.Установка пакетов для разработки npm install --save-dev nodemon
+4.чтобы запустить проект в режиме разработки npm run dev
+5. npm install moment
+6.npm install node-cron  Для автоматического напоминания
+7.npm install multer
+8 npm install nodemailer  для отправки электронной почты
+
+npm install cors - чтобы разрешить выполнять запрос
+
+
+1. Статусы книг
+
+available: книга доступна для аренды или покупки.
+reserved: книга зарезервирована, но еще не оплачена.
+sold: книга куплена.
+rented: книга в аренде.
+unavailable: книга недоступна 

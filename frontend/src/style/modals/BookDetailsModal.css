@@ -1,0 +1,114 @@
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal.open {
+  display: block; 
+  animation: fadeIn 0.3s ease-out; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; 
+  max-width: 600px; 
+  position: relative; 
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  border-radius: 10px;
+  max-height: 80vh;
+  height: auto; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
+
+
+
+.book-details {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  align-items: center; 
+}
+
+.book-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.product-image {
+  width: 200px;
+  height: 200px; 
+  object-fit: cover; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-actions button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px; 
+}
+
+.add-to-cart-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-to-favorites-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: -7px; 
+  right: 3px; 
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+  }
+}

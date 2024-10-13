@@ -1,0 +1,8 @@
+npm install axios
+npm install @reduxjs/toolkit react-redux
+npm install react-hook-form
+npm install react-router-dom
+npm install @mui/icons-material
+
+
+Админ 	leylastarostina8@gmail.com пароль:adminpassword   для получения напоминания об аренде указать при создании пользователя актуальную почту

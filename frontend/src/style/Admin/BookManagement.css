@@ -1,0 +1,126 @@
+
+.book-management {
+  margin-top: 20px;
+}
+
+.admin-section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Стили для формы добавления книги */
+.admin-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.admin-form input,
+.admin-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 1 200px; 
+}
+
+.admin-form-button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1 1 150px; 
+  max-width: 200px; 
+}
+
+.admin-form-button:hover {
+  background-color: #45a049;
+}
+
+/* Стили для фильтров */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.admin-table-filter {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 1 150px; 
+}
+
+/* Стили для таблицы */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books-table th,
+.books-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.books-table th {
+  background-color: #f2f2f2;
+}
+
+.books-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.books-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Стили для кнопок в таблице */
+.admin-table-button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Кнопка "Продать" */
+.sell-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.sell-button:hover {
+  background-color: #1976d2;
+}
+
+/* Кнопка "Удалить" */
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Адаптивность */
+@media screen and (max-width: 768px) {
+  .admin-form,
+  .filters {
+    flex-direction: column;
+  }
+
+  .admin-form input,
+  .admin-form select,
+  .admin-form-button,
+  .admin-table-filter {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

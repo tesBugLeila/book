@@ -1,0 +1,35 @@
+#side-menu {
+  position: fixed;
+  z-index: 100;
+  top: 80px;
+  width: 190px;
+  height: 100vh;
+  padding-top: 90px;
+  padding-left: 0px;
+  background-color: rgb(42, 40, 40);
+  align-items: start;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.9s;
+}
+
+.side-menu-opened{
+  right: 0px;
+}
+
+.side-menu-closed{
+  right: -200px;
+}
+
+.side-menu-item {
+  margin-top: 13px;
+  text-align: left;
+  padding-left: 25px;
+}
+
+@media screen and (min-width: 1190px) {
+  #side-menu {
+    transition: 0s;
+    visibility: hidden;
+  }
+}
+
